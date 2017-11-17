@@ -1,0 +1,40 @@
+public class Pizza
+    private String topping
+    private String size
+    private Double price
+
+    public Pizza() {        
+    }
+
+    public Pizza(String topping, String size, Double price) {
+        this.topping = topping
+        this.size = size
+        setPrice(price)
+    }
+    
+    public void setTopping(String topping) {
+      this.topping = topping
+    }
+
+    public String getTopping() {
+        return this.topping
+    }
+
+    public void setPrice(Double price) {
+      this.price = price
+    }
+
+    public String getPrice() {
+        return this.price
+    }
+
+    public void setSize(String size) {
+      this.size = size
+
+    public String getPrice() {
+        return this.price
+    }
+  
+    public String repeatOrder() {
+        return this.size + " " + this.topping + " pizza for $" + this.price
+    }
