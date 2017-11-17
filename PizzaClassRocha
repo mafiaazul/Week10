@@ -38,3 +38,23 @@ public class Pizza
     public String repeatOrder() {
         return this.size + " " + this.topping + " pizza for $" + this.price
     }
+end Pizza Class
+
+---
+
+public class PizzaTester
+    public static void main(String[] args)
+        
+        Pizza myPizza = new Pizza();
+        
+        myPizza.setTopping("mushroom")
+        myPizza.setSize("large")
+        myPizza.setPrice(12.99)
+
+        Pizza yourPizza = new Pizza("pepperoni", "extra large", 13.99)
+
+        Sysout(myPizza.repeatOrder())
+        Sysout(yourPizza.repeatOrder())
+    end
+end PizzaTester Class
+
